@@ -1,0 +1,39 @@
+.nrwelmaps__map {
+
+  &-container {
+    clear: both;
+    padding-top: 50px;
+
+    @include bp-xs {
+      width: 70%;
+      max-width: 400px;
+    }
+
+    @include bp-sm {
+      width: 100%;
+      max-width: 500px;
+      padding-top: 320px;
+    }
+
+    @include bp-lg {
+      padding-top: 260px;
+    }
+
+    h4 {
+      // margin-top: 20px;
+      font-family: $font-neuzeit;
+    }
+
+  }
+
+  &-path {
+    stroke: $map-stroke;
+    stroke-width: $map-stroke-width;
+
+    &.-hilight {
+      stroke: $map-stroke-hilight;
+      stroke-width: $map-stroke-hilight-width;
+    }
+  }
+
+}
